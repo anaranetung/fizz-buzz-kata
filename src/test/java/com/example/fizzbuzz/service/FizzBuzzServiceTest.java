@@ -37,4 +37,31 @@ public class FizzBuzzServiceTest {
     // then
     assertArrayEquals(expected, output);
   }
+
+  @Test
+  void n_is_15() {
+    // given
+    int n = 15;
+    String[] expected = {
+      "1",
+      "2",
+      "Fizz",
+      "4",
+      "Buzz",
+      "Fizz",
+      "7",
+      "8",
+      "Fizz",
+      "Buzz",
+      "11",
+      "Fizz",
+      "13",
+      "14",
+      "FizzBuzz"
+    };
+    // when
+    String[] output = fizzBuzzService.calculateFizzBuzz(n);
+    // then
+    assertArrayEquals(expected, output);
+  }
 }
